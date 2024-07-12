@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<!-- # chuwaiching added -->
+<style>
+
+/* CSS */
+	.map-buttons {
+	--b: 3px;   /* border thickness */
+	--s: .45em; /* size of the corner */
+	--color: #373B44;
+	
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(--color);
+	--_p: var(--s);
+	background:
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: var(--b) solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+	background-color: #fff;
+	border: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	}
+
+	.map-buttons:hover,
+	.map-buttons:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+	}
+
+	.map-buttons:active {
+	background: var(--color);
+	color: #fff;
+	}
+	@media (min-width: 768px) {
+	.map-button {
+		padding: 16px 32px;
+	}
+	}
+	#contact .contact-info {
+		margin-bottom: 20px;
+		text-align: left !important;
+	}
+	.shadow-box .icon i {
+		font-size: 40px;
+		padding: 0.5rem;
+		color: #0c2e8a;
+	}
+	#contact {
+		background-color: unset !important;
+	}
+	#contact-bk{
+		height: 60rem;
+		z-index: -1;
+		background: url(static/images/address_bg.jpg) no-repeat !important;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		background-size: cover !important;
+		opacity: .6;
+	}
+	.map-button {
+		position: absolute !important;
+	}
+	.container-bar {
+		height: 20px;
+	}
+	.shadow-box {
+		background-color: #fff;
+		padding: 2rem;
+		box-shadow: #00000050 0px 5px 10px;
+		height: 100%;
+	}
+	.shadow-box:hover {
+		transform: scale(1.1);
+	}
+	#sheet0 {
+		width: 100%;
+	}
+	#sheet0 tbody .style1 {
+    text-align: center;
+    font-size: 3rem;
+	}
+	#sheet0 tbody .style2{
+		font-size: 1.2rem;
+	}
+	#sheet0 tbody .style2:hover{
+		color: blue;
+	}
+	#sheet0 tbody tr{
+		height: 4rem;
+	}
+	</style>
+	<!-- # end of chuwaiching added -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="static/js/bdebcbfebe884639af4b7f90290afc72.js"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-857HMH3K8Y');
+</script> -->
+
+  <meta charset="utf-8">
+  <title id="title">One One Universe Trade Co., Ltd - international luxury goods trading wholesale company</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords" content="wholesale, warehouse, international trading, luxury goods,  cosmetics, BURBERRY, CK, DIOR, GUCCI, Estee Lauder, CHANEL, SHISEIDO, Yves Saint Laurent, Lancome, Louis Vuitton, Hermès, Chanel, Hennessy, Rolex, Moët &amp; Chandon, Cartier, Fendi,香港， 化妝品， 香港， 化妆品,">
+  <meta content="" name="description" content="We are an international wholesale trading company in Hong Kong with over one decades experience in dealing with premium luxury goods. 我公司是一家國際批發貿易公司，香港總部和深圳子公司，在高級奢侈品銷售方面有十多年經驗">
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon.png" rel="favicon">
+
+  <!-- Google Fonts -->
+  <link href="static/css/g-font.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/css/magnific-popup.css" rel="stylesheet">
+  <link href="static/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+
+
+</head>
+
+<script type="text/javascript">
+
+	function upOpacity(byId){
+	
+		/*alert("id -- " + byId);*/
+		var myBander = document.getElementById(byId);
+		
+		myBander.style.opacity=1;
+		/*myBander.filters.alpha.opacity=100;*/
+		
+		/*myBander.style.height = "140px";
+        myBander.style.width = "600px";
+		*/
+	}
+	
+	function downOpacity(byId){
+	
+		/*alert("id -- " + byId);*/
+		var myBander = document.getElementById(byId);
+		
+		myBander.style.opacity=0;
+		/*myBander.filters.alpha.opacity=100;*/
+	}
+</script>
+
+<body id="body" onLoad="setLanguage();">
+
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="info@oneoneuniverse.com">info@oneoneuniverse.com</a>
+        <i class="fa fa-phone"></i> (852)2623-7398
+      </div>
+      <div class="social-links float-right">
+        <!--<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
+        <a href="https://www.linkedin.com/company/one-one-universe-trade-co-ltd/?viewAsMember=true" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+		<!--<span class="lng">
+		<a href="#en" id="en"><img id="img_en" src="static/picture/canada_flat.png" width="20"> <span id="language_en"  class="language_inactive">English</span></a>
+		<a href="#cn" id="cn"><img id="img_cn" src="static/picture/china_flat.png" width="20"> <span id="language_cn" class="language_active">中文</span></a>
+		</span>-->
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!--<h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#body"><img src="static/picture/logo_or.png" alt="" title="One One Universe Trade" height="100" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#body"><span id="menu_home">Home</span></a></li>
+          <li><a href="#about"><span id="menu_about">About Us</span></a></li>
+		  <li><a href="#ourvalue"><span id="menu_value">Our Values</span></a></li>
+          <li><a href="#services"><span id="menu_services">Our Business</span></a></li>
+          <li><a href="#portfolio"><span id="menu_portfolioe">Our Brands</span></a></li>
+		  <!-- <li><a href="inventory.html"><span id="menu_portfolioe">Our Storages</span></a></li> -->
+		  <!--<li><a href="goods.html"><span id="menu_portfolioe">Our Goods</span></a></li>-->
+		  <!-- <li><a href="search_inventory.html"><span id="menu_portfolioe">Search Inventory</span></a></li> -->
+          <!--<li><a href="#team">Team</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a> 
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>-->
+          <li><a href="#contact"><span id="menu_contact">Contact</span></a></li>
+		  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		  <li><span class="lng">
+		<a href="#en" id="en"><img id="img_en" src="static/picture/canada_flat.png" width="20" style="display:none"> <span id="language_en"  class="language_active">English</span></a>
+		<a href="#cn" id="cn"><img id="img_cn" src="static/picture/china_flat.png" width="20" style="display:none"> <span id="language_cn" class="language_inactive">繁體中文</span></a>
+		<a href="#cn2" id="cn2"><img id="img_cn2" src="static/picture/china_flat.png" width="20" style="display:none"> <span id="language_cn2" class="language_inactive">简体中文</span></a>
+		</span></li>
+		  
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+  	<div class="intro-content">
+      <h2 style="color:red" id="carousell-title">Global Beauty Supplier</h2>
+      <div>
+        <a href="#portfolio" class="btn-get-started scrollto" id="carousell-sub">Get Started</a>
+      </div>
+    </div>
+
+    
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('static/images/bk1.webp');"></div>
+      <div class="item" style="background-image: url('static/images/bk2.webp');"></div>
+      <div class="item" style="background-image: url('static/images/bk3.webp');"></div>
+    </div>
+
+  </section>
+  
+  
+  <!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img style="height:100%" src="static/picture/about.webp" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h3 id="about_1">We are an international wholesale trading company with over one decades experience in dealing with premium luxury goods.</h3>
+            <p id="about_2">We have built long term relationship with our customers and suppliers worldwide based on mutual trust and strong business ethics.</p>
+		    <p id="about_3">We work based on stocks as well as programmed forward order basis. We carry regular inventory on all major brands with wide assortment to cater to the varied needs of our diverse customer base- from wholesalers to Web Retailers. We have state-of-the-art warehouses across strategic locations around Asia. We take pride in packing the goods in the most professional manner so that our customers receive the goods in the best condition.</p>
+			<p id="about_4">We are able to offer customized solutions with programmed delivery and different modes of transportation across the globe.We value each customer and strive to provide personalized and professional service with a one-point contact.</p>
+            <p id="about_5">We are always looking for long term business partners who share common interests and please contact us if you are interested to know more about us.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+	<br>	<br>
+    <!--==========================
+      Services Section
+    ============================-->
+	<section id="ourvalue" class="wow fadeInUp">
+	<div class="container-bar"></div>
+	<div class="container">
+	<div class="section-header">
+	<h2 id="services_10">Our Values</h2>
+	 <div class="row">
+          <div class="col-lg-4">
+            <div class="box wow fadeInDown shadow-box">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 id="ser_1" class="title">Best Price</a></h4>
+              <p id="ser_11" class="description">We work to offer our customers the most competitive prices in the market.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4"> 
+            <div class="box wow fadeInDown shadow-box">
+              <div class="icon"><i class="fa fa-user-circle-o"></i></div>
+              <h4 class="title" id="ser_2">Customer Satisfaction</a></h4>
+              <p class="description" id="ser_22">We aim to meet the needs of our customers by offering a variety of authentic brand name products and processing their orders in a timely manner.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="box wow fadeInDown shadow-box" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title" id="ser_3">Reliability</a></h4>
+              <p class="description" id="ser_33">We believe working together is the key to success and take pride in our relation and reputation with our suppliers,retailers, and logistic partners.</p>
+            </div>
+          </div>
+		</div>
+        </div>
+		</div></div>
+	</section>
+    <section id="services">
+		<div class="container-bar"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services_1">Our Business</h2>
+          <h3 id="services_2">We specialize in the following business categories:</h3>
+		  <ol type="1" style="font-weight:bold;font-size:22px">
+              <li ><span id="services_3" style="font-weight:bold;font-size:22px">Designer brand name perfumes, Niche perfumes</span></li>
+              <li ><span id="services_4" style="font-weight:bold;font-size:22px">Skincare, Cosmetics</span></li>
+              <li ><span id="services_5" style="font-weight:bold;font-size:22px">Fragrances, Candles</span></li>
+			  <li ><span id="services_6" style="font-weight:bold;font-size:22px">Harecare, Handcare, Body&Bath</span></li>
+              <li ><span id="services_7" style="font-weight:bold;font-size:22px">Product Sourcing</span></li>
+              <li ><span id="services_8" style="font-weight:bold;font-size:22px">Logistics</span></li>
+			  <li ><span id="services_9" style="font-weight:bold;font-size:22px">Brand Promotion</span></li>
+            </l>
+			
+        </div>
+		
+		
+       
+
+      </div>
+    </section>
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+    <section id="portfolio" class="wow fadeInUp">
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 id="portfolio_1">Our Brands</h2>
+		  <!-- <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+			<tbody>
+			  <!-- <tr class="row0">
+				<td class="column0 style1 s" colspan="4">Our Brands</td>
+			  </tr> 
+			  <tr class="row1">
+				<td class="column0 style2 s">ACQUA DI PARMA</td>
+				<td class="column1 style2 s">DAVIDOFF</td>
+				<td class="column2 style2 s">JO MALONE</td>
+				<td class="column3 style2 s">NATURA BISSE</td>
+	
+			  </tr>
+			  <tr class="row2">
+				<td class="column0 style2 s">ALLIE</td>
+				<td class="column1 style2 s">DECORTE</td>
+				<td class="column2 style2 s">KERASTASE</td>
+				<td class="column3 style2 s">NYX</td>
+	
+			  </tr>
+			  <tr class="row3">
+				<td class="column0 style2 s">ANESSA</td>
+				<td class="column1 style2 s">DERMACOL</td>
+				<td class="column2 style2 s">KIEHL'S</td>
+				<td class="column3 style2 s">OBAGI</td>
+	
+			  </tr>
+			  <tr class="row4">
+				<td class="column0 style2 s">ANNA SUI</td>
+				<td class="column1 style2 s">DIOR</td>
+				<td class="column2 style2 s">LALIQUE</td>
+				<td class="column3 style2 s">OLAY</td>
+	
+			  </tr>
+			  <tr class="row5">
+				<td class="column0 style2 s">ANNICK GOUTAL</td>
+				<td class="column1 style2 s">DIPTYQUE</td>
+				<td class="column2 style2 s">LA MER</td>
+				<td class="column3 style2 s">ORIGINS</td>
+	
+			  </tr>
+			  <tr class="row6">
+				<td class="column0 style2 s">ARMANI</td>
+				<td class="column1 style2 s">ELIZABETH ARDEN</td>
+				<td class="column2 style2 s">LANCOME</td>
+				<td class="column3 style2 s">PAUL&amp;JOE</td>
+	
+			  </tr>
+			  <tr class="row7">
+				<td class="column0 style2 s">ATELIER COLOGNE</td>
+				<td class="column1 style2 s">ELIXIR</td>
+				<td class="column2 style2 s">LANVIN</td>
+				<td class="column3 style2 s">PENHALIGON'S</td>
+	
+			  </tr>
+			  <tr class="row8">
+				<td class="column0 style2 s">AVENE</td>
+				<td class="column1 style2 s">ESTEE LAUDER</td>
+				<td class="column2 style2 s">LA PRAIRIE</td>
+				<td class="column3 style2 s">POLA</td>
+	
+			  </tr>
+			  <tr class="row9">
+				<td class="column0 style2 s">BIOTHERM</td>
+				<td class="column1 style2 s">EVE LOM</td>
+				<td class="column2 style2 s">LARTISAN</td>
+				<td class="column3 style2 s">SERGELUTENS</td>
+	
+			  </tr>
+			  <tr class="row10">
+				<td class="column0 style2 s">BOBBI BROWN</td>
+				<td class="column1 style2 s">FIILIT</td>
+				<td class="column2 style2 s">LAURA MERCIER</td>
+				<td class="column3 style2 s">SHISEIDO</td>
+	
+			  </tr>
+			  <tr class="row11">
+				<td class="column0 style2 s">BULY1803</td>
+				<td class="column1 style2 s">FILORGA</td>
+				<td class="column2 style2 s">LE LABO</td>
+				<td class="column3 style2 s">SHU UEMURA</td>
+	
+			  </tr>
+			  <tr class="row12">
+				<td class="column0 style2 s">BURBERRY</td>
+				<td class="column1 style2 s">FRAGONARD</td>
+				<td class="column2 style2 s">L'OCCITANE</td>
+				<td class="column3 style2 s">SISLEY</td>
+			  </tr>
+			  <tr class="row13">
+				<td class="column0 style2 s">BVLGARI</td>
+				<td class="column1 style2 s">FREDERIC MALLE</td>
+				<td class="column2 style2 s">LOREAL</td>
+				<td class="column3 style2 s">SKII</td>
+			  </tr>
+			  <tr class="row14">
+				<td class="column0 style2 s">BYREDO</td>
+				<td class="column1 style2 s">FRESH</td>
+				<td class="column2 style2 s">MAC</td>
+				<td class="column3 style2 s">STRIVECTIN</td>
+	
+			  </tr>
+			  <tr class="row15">
+				<td class="column0 style2 s">CALVIN KLEIN</td>
+				<td class="column1 style2 s">FOREO</td>
+				<td class="column2 style2 s">MAISON MARGIELA</td>
+				<td class="column3 style2 s">THE ORDINARY</td>
+	
+			  </tr>
+			  <tr class="row16">
+				<td class="column0 style2 s">CHANEL</td>
+				<td class="column1 style2 s">GIVENCHY</td>
+				<td class="column2 style2 s">MAKE UP FOR EVER</td>
+				<td class="column3 style2 s">TIFFANY</td>
+	
+			  </tr>
+			  <tr class="row17">
+				<td class="column0 style2 s">CHANTECAILLE</td>
+				<td class="column1 style2 s">GUCCI</td>
+				<td class="column2 style2 s">MARC JACOBS</td>
+				<td class="column3 style2 s">TOM FORD</td>
+	
+			  </tr>
+			  <tr class="row18">
+				<td class="column0 style2 s">CHLOE</td>
+				<td class="column1 style2 s">GUERLAIN</td>
+				<td class="column2 style2 s">MCM</td>
+				<td class="column3 style2 s">URBAN DECAY</td>
+	
+			  </tr>
+			  <tr class="row19">
+				<td class="column0 style2 s">CLARINS</td>
+				<td class="column1 style2 s">HELENA RUBINSTEIN</td>
+				<td class="column2 style2 s">MILLER HARRIS</td>
+				<td class="column3 style2 s">VERSACE</td>
+	
+			  </tr>
+			  <tr class="row20">
+				<td class="column0 style2 s">CLINIQUE</td>
+				<td class="column1 style2 s">HERMES</td>
+				<td class="column2 style2 s">MIU MIU</td>
+				<td class="column3 style2 s">VOLUSPA</td>
+	
+			  </tr>
+			  <tr class="row21">
+				<td class="column0 style2 s">CPB</td>
+				<td class="column1 style2 s">IPSA</td>
+				<td class="column2 style2 s">NARCISO RODRIGUEZ</td>
+				<td class="column3 style2 s">YSL</td>
+	
+			  </tr>
+			  <tr class="row22">
+				<td class="column0 style2 s">CREED</td>
+				<td class="column1 style2 s">ISSEY MIYAKE</td>
+				<td class="column2 style2 s">NARS</td>
+				<td class="column3 style2 n">4711</td>
+			  </tr>
+			  </tr>
+			</tbody>
+		</table> -->
+		<img id="brandwall" style="width: 100%" src="static/picture/brandwall.webp">
+    <!--==========================
+      Contact Section
+    ============================-->
+	<div id="contact-bk"></div>
+    <section id="contact" class="wow fadeInUp">
+		<div class="container-bar"></div>
+		<div class="container-bar"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact_0">Contact Us</h2>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <h3 id="contact_1_1">Head Office - Hong Kong</h3>
+			<br>
+			<h6 id="contact_1_2">Tel：(852)2623-7398</h6>
+			<a href='mailto:info@oneoneuniverse.com'><h6 id="contact_1_3">Email：info@oneoneuniverse.com</h6></a>
+			<h6 id="contact_1_4">Add：247-248, 2/F BLOCK A, CAMBRIDGE PLAZA, 188 SAN WAN RD., SHEUNG SHUI, H.K.</h6>
+          </div>
+
+          <div class="col-md-4">
+            <h3 id="contact_2_1">China Branch Office -- Shen Zhen</h3>
+			<br>
+			<h6 id="contact_2_2">Tel：+86 15889497414</h6>
+			<a href='mailto:sales@oneoneuniverse.com'><h6 id="contact_2_3">Email：sales@oneoneuniverse.com</h6></a>
+			<h6 id="contact_2_4">Add：13/F, Block A, Yicheng Huanzhi Center, Longhua Street, Longhua District, Shenzhen, Guangdong</h6>
+          </div>
+
+		  <div class="col-md-4">
+            <h3 id="contact_3_1">North American Branch -- Canada</h3>
+			<br>
+			<h6 id="contact_3_2">Tel：(604)908-0865</h6>
+			<a href='mailto:roy@oneoneuniverse.com'><h6 id="contact_3_3">Email：roy@oneoneuniverse.com</h6></a>
+			<h6 id="contact_3_4">Add：15826 109 Avenue, Surrey, BC Vancouver</h6>
+          </div>
+		  <div class="container-bar"></div>
+		  <div class="container-bar"></div>
+		  <div class="container mb-4" style="display: flex;flex-direction: row-reverse;margin-top: 2rem;">
+		<div class="map-button">
+			<button id="contact_1_5" class="map-buttons" onclick="map('hk')">Hong Kong</button>
+			<button id="contact_2_5" class="map-buttons" onclick="map('chn')">Shen Zhen</button>
+			<button id="contact_3_5" class="map-buttons" onclick="map('can')">Vancouver</button>
+		</div>
+
+			<iframe id="google_map" src="https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9340274711953!2d114.12010161458991!3d22.506658285216723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f60d7b5192bd%3A0x105400326b87da97!2s248%2C%202%2FF%20BLOCK%2C%20Cambridge%20Plaza%2C%20188%20San%20Wan%20Rd%2C%20Sheung%20Shui%2C%20Hong%20Kong!5e0!3m2!1sen!2sca!4v1572654557384!5m2!1sen!2sca" width="100%" height="500" top="30" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<!-- <img src="static/picture/068d8772cf93468da70d4191ae8d78b5.gif"> -->
+      	  </div>
+
+      </div>
+	</div>
+	</div>    	
+</div>    
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>One One Universe Trade</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+        -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+		<div class="report-wrap">
+			<a href="" target="_blank" class="report-link">
+			<img src="static/picture/beian.png" style="width: 25px;" class="report-img"></a>
+			<a href="https://beian.miit.gov.cn/" target="_blank" class="report-link">
+				<span class="report-link-text report-link-text-unique">
+					粤ICP备2024240449号-1
+				</span>
+			</a>
+		</div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="static/js/new-jquery.min.js"></script>
+  <!-- <script src="static/js/jquery-migrate.min.js"></script> -->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/easing.min.js"></script>
+  <script src="static/js/hoverintent.js"></script>
+  <script src="static/js/superfish.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/magnific-popup.min.js"></script>
+  <script src="static/js/sticky.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <!-- <script src="static/js/contactform.js"></script> -->
+
+  <!-- Template Main Javascript File -->
+  <script src="static/js/main.js"></script>
+  
+  
+
+  <script type="text/javascript">
+        function setCookie(key, value) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+            document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+        }
+
+        function getCookie(key) {
+            var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+            return keyValue ? keyValue[2] : null;
+        }
+		var status = ''
+		var iframe = document.getElementById('google_map');  
+		// var timeoutId = setTimeout(function() {  
+		// 	if (iframe.readyState != 'complete') {
+		// 		// 如果在这里超时，假设iframe无法浏览  
+		// 		iframe.src = 'https://oneoneuniverse.com/map2.html'; 
+		// 		status = 'china'
+		// 	}
+
+		// }, 2000); // 设置2秒的超时时间  
+	</script>
+  
+  <!--multi language support-->
+	<script type="text/javascript">
+		var translation, translate;
+
+		translation = {
+			"en": {
+				"#title" : "One One Universe Trade",
+				"#menu_home"      :  "Home",
+				"#menu_value"      :  "Our Value",
+				"#menu_about"      :  "About",
+				"#menu_services"      :  "Our Business",
+				"#menu_portfolioe"      :  "Our Brands",
+				"#menu_contact"      :  "Contact",
+				"#carousell-title" : "Global Beauty Supplier",
+				"#carousell-sub" : "Get Started",
+				
+				"#welcome"  :  "Welcome to Baywest Log & Timber Homes",
+				"#about_1"	: 	"We are an international wholesale trading company with over one decades experience in dealing with premium luxury goods.",
+				"#about_2"	: 	"We have built long term relationship with our customers and suppliers worldwide based on mutual trust and strong business ethics.",
+				"#about_3"	: 	"We work based on stocks as well as programmed forward order basis. We carry regular inventory on all major brands with wide assortment to cater to the varied needs of our diverse customer base- from wholesalers to Web Retailers. We have state-of-the-art warehouses across strategic locations around Asia. We take pride in packing the goods in the most professional manner so that our customers receive the goods in the best condition.",
+				"#about_4"	: 	"We are able to offer customized solutions with programmed delivery and different modes of transportation across the globe.We value each customer and strive to provide personalized and professional service with a one-point contact.",
+				"#about_5"	: 	"We are always looking for long term business partners who share common interests and please contact us if you are interested to know more about us.",
+				
+				"#ser_1"	: 	"Best Prices",
+				"#ser_11"	: 	"We work to offer our customers the most competitive prices in the market.",
+				"#ser_2"	: 	"Customer Satisfaction",
+				"#ser_22"	: 	"We aim to meet the needs of our customers by offering a variety of authentic brand name products and processing their orders in a timely manner.",
+				"#ser_3"	: 	"Reliability",
+				"#ser_33"	: 	"We believe working together is the key to success and take pride in our relation and reputation with our suppliers,retailers, and logistic partners.",
+				"#contact_1_1" : "Head Office - Hong Kong",
+				"#contact_1_2" : "Tel：(852)2623-7398",
+				"#contact_1_3" : "Email：info@oneoneuniverse.com",
+				"#contact_1_4" : "Add：247-248, 2/F BLOCK A, CAMBRIDGE PLAZA, 188 SAN WAN RD., SHEUNG SHUI, H.K.",
+				"#contact_2_1" : "China Branch Office -- Shen Zhen",
+				"#contact_2_2" : "Tel：+86 15889497414",
+				"#contact_2_3" : "Email：sales@oneoneuniverse.com",
+				"#contact_2_4" : "Add：37/F, 3705Room, RongChao Commercial Building, 4028 JinTian Street, FuTian District, Shenzhen, Guangdong",
+				"#contact_3_1" : "North American Branch -- Canada",
+				"#contact_3_2" : "Tel：(604)908-0865",
+				"#contact_3_3" : "Email：roy@oneoneuniverse.com",
+				"#contact_3_4" : "Add：15826 109 Avenue, Surrey, BC Vancouver",
+				"#contact_1_5" : "Hong Kong",
+				"#contact_2_5" : "Shen Zhen",
+				"#contact_3_5" : "Vancouver",
+			
+				"#services_1"	: 	"Our Business",
+				"#services_2"	: 	"We specialize in the following business categories:",
+				"#services_3"	: 	"Designer brand name perfumes, Niche perfumes",
+				"#services_4"	: 	"Skincare, Cosmetics",
+				"#services_5"	: 	"Fragrances, Candles",
+				"#services_6"	: 	"Haircare, Handcare, Body&Bath",
+				"#services_7"	: 	"Product Sourcing",
+				"#services_8"	: 	"Logistics",
+				"#services_9"	: 	"Brand Promotion",
+				"#services_10"	: 	"Our Values",
+				
+			
+				
+				
+				"#portfolio_1"  :   "Our Brands",
+				"#portfolio_2"  :   "Skin Care",
+				"#portfolio_3"  :   "Makeup",
+				"#portfolio_4"  :   "Fashion/Fashion Accessories",
+				"#portfolio_5"  :   "Watch/Jewelry",
+				"#portfolio_6"  :   "Cosmetology",
+				"#contact_0" : "CONTACT US",
+				"#contact_1"  :   "Contact Us",
+				"#contact_2"  :   "Address",
+				"#contact_3"  :   "248, 2/F BLOCK A, CAMBRIDGE PLAZA, 188 SAN WAN RD., SHEUNG SHUI, H.K.",
+				"#contact_4"  :   "Phone Number",
+				"#contact_5"  :   "Email",
+				
+				
+				
+					
+			},
+			"cn": {
+				"#title" : "一一宇宙貿易有限公司",
+				/*"div > a:eq(0)": "ein Link",
+				"div h1"       : "ein Titel",
+				"p"            : "eigen Inhalt"*/
+				"#menu_home"      :  "主頁",
+				"#menu_about"      :  "關於我們",
+				"#menu_value"      :  "我們的價值",
+				"#menu_services"      :  "業務範圍",
+				"#menu_portfolioe"      :  "品牌",
+				"#menu_contact"      :  "聯絡我們",
+				"#carousell-title" : "全球領先美妝供應鏈",
+				"#carousell-sub" : "按此開始",
+				"#contact_1_5" : "香港",
+				"#contact_2_5" : "深圳",
+				"#contact_3_5" : "溫哥華",
+				
+				"#welcome"      :  "欢迎来到加拿大柏威木业集团",
+				"#about_1"	: 	"我公司是一家國際批發貿易公司，香港總部和深圳子公司，在高級奢侈品銷售方面有十多年經驗。",
+				"#about_2"	: 	"我公司已經與全球的客戶和供應商在相互和注重商業道德的基礎上建立了長期的合作關係。",
+				"#about_3"	: 	"公司不僅可以提供現貨，還可以接受滿足不同客戶需求的遠期訂單。我公司的所有主打品牌產品都有常規存貨，以滿足客戶（批發、網絡零售商）的不同需求。我們能够以最專業化的管道包裝商品而感到自豪，因為這樣，客戶收到的商品都會處於最佳狀態。",
+				"#about_4"	: 	"我們能够以既定的交付管道和不同的運輸管道在全球提供個性化的解決方案。我們尊重每一位顧客，力求為每位顧客提供個性化的專業服務。",
+				"#about_5"	: 	"我們一直在尋找有著共同利益的長期合作夥伴，如果您有興趣更多地瞭解我們，請與我們聯系。",
+				
+				"#ser_1"	: 	"價格優勢",
+				"#ser_11"	: 	"我們努力為客戶提供市場上最具競爭力的價格。",
+				"#ser_2"	: 	"客戶滿意",
+				"#ser_22"	: 	"我們旨在通過提供豐富的品牌和產品，及時處理客戶的訂單來滿足客戶的需求。",
+				"#ser_3"	: 	"值得信賴",
+				"#ser_33"	: 	"我們相信誠信合作是成功的關鍵。我們以真誠、善良，認真負責的態度對待每一個供應商、零售商和物流合作夥伴。",
+				
+				"#services_1"	: 	"業務範圍",
+				"#services_2"	: 	"我公司的主打產品為：",
+				"#services_3"	: 	"高級香水、小眾香水、沙龍香水",
+				"#services_4"	: 	"彩妝、護膚",
+				"#services_5"	: 	"香薰蠟燭",
+				"#services_6"	: 	"頭髮、身體洗護",
+				"#services_7"	: 	"尋找供應商",
+				"#services_8"	: 	"物流",
+				"#services_9"	: 	"品牌運營",
+				"#services_10"	: 	"我們的價值",
+
+				"#contact_1_1" : "總公司 - 香港",
+				"#contact_1_2" : "聯絡電話：(852)2623-7398",
+				"#contact_1_3" : "電子郵箱：info@oneoneuniverse.com",
+				"#contact_1_4" : "辦公地址：香港上水新運路188號劍橋廣場A座2樓248室",
+				"#contact_2_1" : "中國分公司 - 深圳",
+				"#contact_2_2" : "聯絡電話：+86 15889497414",
+				"#contact_2_3" : "電子郵箱：sales@oneoneuniverse.com",
+				"#contact_2_4" : "辦公地址：廣東省深圳市福田區37樓3705室榮超經貿中心金田路4028號",
+				"#contact_3_1" : "北美分公司 - 加拿大",
+				"#contact_3_2" : "聯絡電話：(604)908-0865",
+				"#contact_3_3" : "電子郵箱：roy@oneoneuniverse.com",
+				"#contact_3_4" : "辦公地址：不列顛哥倫比亞省素里市109大道15826號，溫哥華，加拿大",
+			
+				/*
+				公司不僅可以提供現貨，還可以接受滿足不同客戶需求的遠期訂單。我公司的所有主打品牌產品都有常規存貨，以滿足客戶（批發、網絡零售商）的不同需求。我們能够以最專業化的管道包裝商品而感到自豪，因為這樣，客戶收到的商品都會處於最佳狀態。我們能够以既定的交付管道和不同的運輸管道在全球提供個性化的解決方案。我們尊重每一位顧客，力求為每位顧客提供個性化的專業服務。我們一直在尋找有著共同利益的長期合作夥伴，如果您有興趣更多地瞭解我們，請與我們聯系
+				*/
+				
+				
+				"#contact_0" : "聯絡我們",
+				"#portfolio_1"  :   "品牌",
+				"#portfolio_2"  :   "護膚品",
+				"#portfolio_3"  :   "化妝品",
+				"#portfolio_4"  :   "時尚/時尚配飾",
+				"#portfolio_5"  :   "手錶/珠寶",
+				"#portfolio_6"  :   "醫學美容",
+				
+				"#contact_1"  :   "聯繫我們",
+				"#contact_2"  :   "公司地址",
+				"#contact_3"  :   "香港上水新運路188號劍橋廣場A座2樓248室",
+				"#contact_4"  :   "聯繫電話",
+				"#contact_5"  :   "電郵",
+				
+			},
+			"cn2": {
+				"#title" : "一一宇宙贸易有限公司",
+				/*"div > a:eq(0)": "ein Link",
+				"div h1"       : "ein Titel",
+				"p"            : "eigen Inhalt"*/
+				"#menu_home"      :  "主页",
+				"#menu_about"      :  "关于我们",
+				"#menu_value"      :  "我们的价值",
+				"#menu_services"      :  "业务范围",
+				"#menu_portfolioe"      :  "品牌",
+				"#menu_contact"      :  "联络我们",
+				"#carousell-title" : "全球领先美妆供应链",
+				"#carousell-sub" : "按此开始",
+				"#contact_1_5" : "香港",
+				"#contact_2_5" : "深圳",
+				"#contact_3_5" : "温哥华",
+				"#about_1"	: 	"我公司是一家国际批发贸易公司，香港总部和深圳子公司，在高级奢侈品销售方面有十多年经验。",
+				"#about_2"	: 	"我公司已经与全球的客户和供应商在相互和注重商业道德的基础上建立了长期的合作关系。",
+				"#about_3"	: 	"公司不仅可以提供现货，还可以接受满足不同客户需求的远期订单。我公司的所有主打品牌产品都有常规存货，以满足客户（批发、网络零售商）的不同需求。我们能够以最专业化的管道包装商品而感到自豪，因为这样，客户收到的商品都会处于最佳状态。",
+				"#about_4"	: 	"我们能够以既定的交付管道和不同的运输管道在全球提供个性化的解决方案。我们尊重每一位顾客，力求为每位顾客提供个性化的专业服务。",
+				"#about_5"	: 	"我们一直在寻找有着共同利益的长期合作伙伴，如果您有兴趣更多地了解我们，请与我们联系。",
+				
+				
+				"#contact_1_1" : "总公司 - 香港",
+				"#contact_1_2" : "联络电话：(852)2623-7398",
+				"#contact_1_3" : "电子邮箱：info@oneoneuniverse.com",
+				"#contact_1_4" : "办公地址：香港上水新运路188号剑桥广场A座2楼248室",
+				"#contact_2_1" : "中国分公司 - 深圳",
+				"#contact_2_2" : "联络电话：+86 15889497414",
+				"#contact_2_3" : "电子邮箱：sales@oneoneuniverse.com",
+				"#contact_2_4" : "办公地址：广东省深圳市福田区37楼3705室荣超经贸中心金田路4028号",
+				"#contact_3_1" : "北美分公司 - 加拿大",
+				"#contact_3_2" : "联络电话：(604)908-0865",
+				"#contact_3_3" : "电子邮箱：roy@oneoneuniverse.com",
+				"#contact_3_4" : "办公地址：不列颠哥伦比亚省素里市109大道15826号，温哥华，加拿大",
+
+				"#services_1"	: 	"业务范围",
+				"#services_2"	: 	"我公司的主打产品为：",
+				"#services_3"	: 	"高级香水、小众香水、沙龙香水",
+				"#services_4"	: 	"彩妆、护肤",
+				"#services_5"	: 	"香薰蜡烛",
+				"#services_6"	: 	"头发、身体洗护",
+				"#services_7"	: 	"寻找供应商",
+				"#services_8"	: 	"物流",
+				"#services_9"	: 	"品牌运营",
+				"#services_10"	: 	"我们的价值",
+
+				"#ser_1"	: 	"价格优势",
+				"#ser_11"	: 	"我们努力为客户提供市场上最具竞争力的价格。",
+				"#ser_2"	: 	"客户满意",
+				"#ser_22"	: 	"我们旨在通过提供丰富的品牌和产品，及时处理客户的订单来满足客户的需求。",
+				"#ser_3"	: 	"值得信赖",
+				"#ser_33"	: 	"我们相信诚信合作是成功的关键。我们以真诚、善良，认真负责的态度对待每一个供应商、零售商和物流合作伙伴。",
+				/*
+				公司不僅可以提供現貨，還可以接受滿足不同客戶需求的遠期訂單。我公司的所有主打品牌產品都有常規存貨，以滿足客戶（批發、網絡零售商）的不同需求。我們能够以最專業化的管道包裝商品而感到自豪，因為這樣，客戶收到的商品都會處於最佳狀態。我們能够以既定的交付管道和不同的運輸管道在全球提供個性化的解決方案。我們尊重每一位顧客，力求為每位顧客提供個性化的專業服務。我們一直在尋找有著共同利益的長期合作夥伴，如果您有興趣更多地瞭解我們，請與我們聯系
+				*/
+				
+				
+				"#contact_0" : "联络我们",
+				"#portfolio_1"  :   "品牌",
+				"#portfolio_2"  :   "护肤品",
+				"#portfolio_3"  :   "化妆品",
+				"#portfolio_4"  :   "时尚/时尚配饰",
+				"#portfolio_5"  :   "手表/珠宝",
+				"#portfolio_6"  :   "医学美容",
+				
+				"#contact_1"  :   "联系我们",
+				"#contact_2"  :   "公司地址",
+				"#contact_3"  :   "香港上水新运路188号剑桥广场A座2楼248室",
+				"#contact_4"  :   "联系电话",
+				"#contact_5"  :   "电邮",
+				
+			}
+		}
+
+			
+		translate = function( lng,translationObj ){
+			if( lng && translationObj[lng] ) {
+				
+				//alert(lng);
+				return $.each(translationObj[lng], function(k,v){
+					 $(k).text(v);  
+				});
+			}else{
+				return $.error("arrete voir");
+			}
+		}
+		
+		
+		$("span.lng a").bind("click", function(event){
+		
+			//alert("button clicked");
+		
+			var languageId = jQuery(this).attr("id");
+			//alert("languageId --  " + languageId);
+			//alert($(this).data("language"));
+			setCookie("siteLanguage", languageId);
+			
+			$("#language_en").attr('class', 'language_inactive');
+			$("#language_cn").attr('class', 'language_inactive');
+			$("#language_cn2").attr('class', 'language_inactive');
+			
+			if (languageId == "cn") {$("#language_cn").attr('class', 'language_active');};
+			
+			if (languageId == "en") {$("#language_en").attr('class', 'language_active');};
+			
+			if (languageId == "cn2") {$("#language_cn2").attr('class', 'language_active');};
+			
+			//$("#img_en").attr("src", "images/Canada_flat_bw.png");
+//			
+//			$("#img_cn").attr("src", "images/China_flat_bw.png");
+//
+//			if ($(this).text() == "Chinese") {$("#img_cn").attr("src", "images/China_flat.png");};
+//			
+//			if ($(this).text() == "English") {$("#img_en").attr("src", "images/Canada_flat.png");};
+			
+			/*alert(getCookie("siteLanguage"));*/
+			event.preventDefault();
+			translate(languageId, translation); 
+			//translate("fr", translation);
+		});
+	
+	
+	</script>
+	
+	<script type="text/javascript">
+		function setLanguage(){
+			//other function
+
+			//alert(getCookie("siteLanguage"));
+			// Tradition Chinese is default language
+			if ( getCookie("siteLanguage") == "en") {
+				//$("#img_cn").attr("src", "images/China_flat_bw.png");
+				//$("#img_en").attr("src", "images/Canada_flat.png");
+				$("#language_cn").attr('class', 'language_inactive');
+				$("#language_cn2").attr('class', 'language_inactive');
+				$("#language_en").attr('class', 'language_active');
+				document.getElementById("img_en").click();
+			
+			} else if ( getCookie("siteLanguage") == "cn") {
+				//$("#img_cn").attr("src", "images/China_flat_bw.png");
+				//$("#img_en").attr("src", "images/Canada_flat.png");
+				$("#language_cn2").attr('class', 'language_inactive');
+				$("#language_en").attr('class', 'language_inactive');
+				$("#language_cn").attr('class', 'language_active');
+				document.getElementById("img_cn").click();
+			
+			} else if ( getCookie("siteLanguage") == "cn2") {
+				//$("#img_cn").attr("src", "images/China_flat_bw.png");
+				//$("#img_en").attr("src", "images/Canada_flat.png");
+				$("#language_cn").attr('class', 'language_inactive');
+				$("#language_en").attr('class', 'language_inactive');
+				$("#language_cn2").attr('class', 'language_active');
+				document.getElementById("img_cn2").click();
+			
+			}
+
+			else {
+				$("#language_en").attr('class', 'language_active');
+				$("#language_cn2").attr('class', 'language_inactive');
+				$("#language_cn").attr('class', 'language_inactive');
+				//$("#img_en").attr("src", "images/Canada_flat_bw.png");
+				//$("#img_cn").attr("src", "images/China_flat.png");
+				//alert("here it is");
+				document.getElementById("img_en").click();
+			}
+			
+			
+			$('.flip').hover(function(){
+					$(this).find('.card').toggleClass('flipped');
+			
+			 });
+			
+			
+			//if (getCookie("siteLanguage") == "Chinese") {
+//				$("#language_en").attr('class', 'language_inactive');
+//				$("#language_cn").attr('class', 'language_active');
+//				//$("#img_en").attr("src", "images/Canada_flat_bw.png");
+//				//$("#img_cn").attr("src", "images/China_flat.png");
+//				document.getElementById("img_cn").click();
+//			};
+//			
+//			if (getCookie("siteLanguage") == "English") {
+//				//$("#img_cn").attr("src", "images/China_flat_bw.png");
+//				//$("#img_en").attr("src", "images/Canada_flat.png");
+//				$("#language_cn").attr('class', 'language_inactive');
+//				$("#language_en").attr('class', 'language_active');
+//				document.getElementById("img_en").click();
+//			};
+		}
+		
+	function map(country){
+		var map_link = document.getElementById("google_map");
+		if (country === 'hk'){
+			map_link.src = 'https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d2117.8533123662673!2d114.12757953072342!3d22.501714268027847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f78729c270f5%3A0xee5f18efdb01dfe9!2z5LiA5LiA5a6H5a6Z6LK_5piT5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2shk!4v1679561831382!5m2!1szh-TW!2shk'
+			map_link.src = 'https://gmap.strawberrybaby.net/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=AIzaSyCQv6QqkeYlHr6d9u0cnpra1BsLPZCDb8M'
+			if (status === 'china'){
+				map_link.src = 'https://oneoneuniverse.com/map2.html'
+			}
+		}
+		if (country === 'chn'){
+			map_link.src = 'https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d579.0732815049976!2d114.02822880186454!3d22.64662420079128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34038c95acafc08d%3A0x26a54bc630993271!2z5aO55oiQ55Kw5pm65Lit5b-D77y077yv77y377yl77yyIO-8oQ!5e0!3m2!1szh-TW!2shk!4v1679562085182!5m2!1szh-TW!2shk'
+			//if (status === 'china'){
+			//	map_link.src = 'https://oneoneuniverse.com/map1.html'
+			//}
+		}
+		if (country === 'can'){
+			map_link.src = 'https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.0067886475317!2d-122.78589634852315!3d49.20043077922098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d70310079493%3A0xbbeffa9c3f358ed1!2zMTU4MjYgMTA5IEF2ZSwgU3VycmV5LCBCQyBWNE4gNUcx5Yqg5ou_5aSn!5e0!3m2!1szh-TW!2shk!4v1679562123711!5m2!1szh-TW!2shk'
+		}
+	}	
+	</script>
+	
+	
+	
+
+</body>
+</html>
